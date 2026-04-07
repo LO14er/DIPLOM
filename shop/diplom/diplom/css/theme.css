@@ -1,0 +1,32 @@
+[data-theme="dark"] body {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #111 100%);
+    background-attachment: fixed;     /* чтобы градиент не двигался при скролле */
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] .main-content,
+[data-theme="dark"] .products-grid,
+[data-theme="dark"] .main-area {
+    background: transparent !important;
+}
+
+/* если хочешь градиент только строго за карточками товаров */
+[data-theme="dark"] .products-grid {
+    background: linear-gradient(to bottom, #0f0f0f 0%, #1c1c1c 100%);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+}
+
+/* карточки товаров в тёмной теме */
+[data-theme="dark"] .product-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] .product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.7);
+    border-color: #444;
+}
